@@ -1,157 +1,260 @@
-
-/*eslint-disable*/
 import React from "react";
-import logo from "../../assets/img/fclogotrans.png"
-// reactstrap components
-import { Row, Container } from "reactstrap";
-import { Link, NavLink } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhone,
+  faMapMarkerAlt,
+  faEnvelope,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faLinkedinIn,
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import logo from "../../assets/img/FirstCertLogoFoot.png";
 
-function DemoFooter() {
-  function openGmail(event) {
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
-    const appUrl = "googlegmail://co?to=info@firstcertification.com";
-    const webUrl = "https://mail.google.com/mail/?view=cm&to=info@firstcertification.com";
-    
-    if (isMobile) {
-      event.preventDefault();
-      window.location.href = appUrl;
-    } else {
-      const webWindow = window.open(webUrl, "_blank");
-      if (!webWindow || webWindow.closed || typeof webWindow.closed === "undefined") {
-        event.preventDefault();
-        window.location.href = appUrl;
-      }
-    }
-  }
+const DemoFooter = () => {
+  const currentYear = new Date().getFullYear();
+
+  // Logo component with your actual logo
+  const Logo = () => (
+    <div className="logo-container mb-4 text-start">
+      <img
+        src={logo}
+        alt="FirstCert Logo"
+        className="img-fluid footer-logo"
+        style={{ maxHeight: "150px", marginLeft:'-3rem' }}
+      />
+    </div>
+  );
+
   return (
-    
-        <div className="ftsec mt-5">
-  <footer
-          className="text-center text-lg-start text-black blurbox animated fadeIn"
-          style={{
-          marginTop: "6em"}}  >
-            <Container>
-              <Row >
-   <div className="container p-4 pb-0 ">
-      <section className="">
-        <div className="row">
-          <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <Link to="/index">  <img loading="lazy"  src={logo} alt="firstcertification logo" style={{height:"150px",width:"250px"}} /></Link>
-          </div>
-
-          <hr className="w-100 clearfix d-md-none" />
-
-          <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
-            <h6 className="text-uppercase mb-4 font-weight-bold">Company</h6>
-            <p>
-              <NavLink  style={{fontWeight:'500',color:'black'}} to='/aboutus'>About Us</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to="/services"> Services</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to="/privacypolicy"> Privacy Policy</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to="/tnc"> Terms & Conditions</NavLink>
-            </p>
-          </div>
-
-          <hr className="w-100 clearfix d-md-none" />
-
-          <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-left">
-            <h6 className="text-uppercase mb-4 font-weight-bold">
-              Our Services
-            </h6>
-            <p >
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/quality'>Quality</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/environment'>Environment</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>Health & Safety</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>Cyber Security</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/cemarking'>CE Marking</NavLink>
-            </p>
-            <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/cmmi'>CMMI</NavLink>
-
-            </p>
-          </div>
-
-          <hr className="w-100 clearfix d-md-none" />
-
-          <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-left ">
-            <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p  style={{color:'black', fontWeight:'500'}}><i className="fas fa-home mr-3"></i> Bangalore, India</p>
-            <p style={{color:'black'}}><i className="fas fa-envelope mr-3"></i> <a  style={{color:'black', fontWeight:'500'}} href="https://mail.google.com/mail/?view=cm&to=info@firstcertification.com" 
->info@firstcertification.com </a></p>
-            <p  style={{color:'black', fontWeight:'500'}}><i className="fas fa-phone mr-3" ></i> +91 8073358319</p>
-          </div>
-        </div>
-      </section>
-
-      <hr className="my-3 animated fadeIn"/>
-
-      <section className="p-3 pt-0">
-        <div className="row d-flex align-items-center">
-          <div className="col-md-7 col-lg-8 text-center text-md-start">
-            <div className="p-3">
-              © 2023 Copyright:
-              <NavLink className="text-dark" tag={Link} to="/"
-                 > firstcertification.com</NavLink>
-                
+    <footer className="footer text-dark pt-5 pb-4 border-top position-relative overflow-hidden">
+      <div className="container position-relative">
+        {/* Main Footer Content */}
+        <div className="row mb-5">
+          {/* Logo & Description Column */}
+          <div className="col-lg-4 mb-4 mb-lg-0">
+            <div className="footer-logo-section">
+              <Logo />
+              <p className="footer-description mt-4 mb-4 text-dark">
+                First Cert helps businesses achieve global compliance and
+                certification, including ISO 9001, 14001, 27001, SOC, GDPR,
+                HIPAA, PCI DSS, and more. We offer end-to-end
+                solutions—consulting, audits, training, and
+                documentation—ensuring efficiency, credibility, and lasting
+                value for startups and enterprises.
+              </p>
+              <p className="mb-1" style={{ fontWeight: "500" }}>
+                © {currentYear} FirstCertification. All rights reserved.
+              </p>
+              <br />
+              {/* Social Links with Better Spacing */}
+              <div className="social-icons">
+                <h6 className="mb-4 text-dark fw-bold">CONNECT WITH US</h6>
+                <div className="d-flex social-links-container">
+                  <a href="https://www.linkedin.com/company/first-cert/" className="social-icon me-4">
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                  </a>
+                  <a href="https://wa.me/918073358319?text=Thank you for Contacting First Cert" className="social-icon me-4">
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                  </a>
+                  {/* <a href="#" className="social-icon me-4">
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </a>
+                  <a href="#" className="social-icon me-4">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                  <a href="#" className="social-icon">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a> */}
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-           
-            <a
-               className="btn btn-outline-light btn-floating m-1 text-dark"
-               
-               role="button"
-               href="https://www.linkedin.com/company/first-cert/"
-               target="_blank"
-               ><i className="fab fa-linkedin"></i
-              ></a>
+          {/* Company & Sitemap Column */}
+          <div className="col-lg-2 col-md-4 mb-4 mb-md-0">
+            <h5 className="text-primary mb-4 fw-bold">COMPANY</h5>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <a href="/aboutus" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  About Us
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/contact" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Contact Us
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="/sitemap.xml"
+                  className="footer-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Sitemap
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/aboutus" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Privacy Policy
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="/aboutus" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Terms & Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
 
-           
-              <a className="btn btn-outline-light btn-floating m-1 text-dark" 
-   role="button" 
-   href="https://api.whatsapp.com/send?phone=918073358319&text=Hi FirstCert! I want to know your Services "
-   target="_blank"
->
-  <i className="fab fa-whatsapp"></i>
-</a>
+          {/* Services Column */}
+          <div className="col-lg-3 col-md-4 mb-4 mb-md-0">
+            <h5 className="text-primary mb-4 fw-bold">SERVICES</h5>
+            <ul className="list-unstyled">
+              <li className="mb-2">
+                <a href="iso-9001-certification" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Quality Certification
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="iso-14001-certification" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Environment Certification
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="iso-45001-certification" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Health & Safety
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="iso-27001-certification" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Cyber Security
+                </a>
+              </li>
+              <li className="mb-2">
+                <a href="ce-mark-certification" className="footer-link">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="me-2 text-primary"
+                    size="xs"
+                  />
+                  Product Certification
+                </a>
+              </li>
+            </ul>
+          </div>
 
-
-            <a
-               className="btn btn-outline-light btn-floating m-1 text-dark"
-               
-               role="button"
-               href="https://mail.google.com/mail/?view=cm&to=info@firstcertification.com"      target="_blank"
-               onClick={openGmail} ><i className="fas fa-envelope"></i
-              ></a>
-
-           
+          {/* Contact Column */}
+          <div className="col-lg-3 col-md-4">
+            <h5 className="text-primary mb-4 fw-bold">CONTACT</h5>
+            <ul className="list-unstyled contact-info">
+              <li className="mb-3 d-flex align-items-start">
+                <div className="contact-icon bg-primary rounded-circle d-flex align-items-center justify-content-center me-3">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="text-white"
+                    size="sm"
+                  />
+                </div>
+                <div>
+                  <p className="mb-0 fw-semibold">Phone</p>
+                  <p className="mb-0 text-muted">+91 8073358319</p>
+                </div>
+              </li>
+              <li className="mb-3 d-flex align-items-start">
+                <div className="contact-icon bg-primary rounded-circle d-flex align-items-center justify-content-center me-3">
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    className="text-white"
+                    size="sm"
+                  />
+                </div>
+                <div>
+                  <p className="mb-0 fw-semibold">Address</p>
+                  <p className="mb-0 text-muted">Bangalore, India</p>
+                </div>
+              </li>
+              <li className="d-flex align-items-start">
+                <div className="contact-icon bg-primary rounded-circle d-flex align-items-center justify-content-center me-3">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="text-white"
+                    size="sm"
+                  />
+                </div>
+                <div>
+                  <p className="mb-0 fw-semibold">Email</p>
+                  <p className="mb-0 text-muted">info@firstcertification.com</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </div>
-    </Row>
-    </Container>
-  </footer>
-  
-</div>
-      
+
+        {/* Divider */}
+        <hr className="border-secondary opacity-25 my-5" />
+        {/* Footer watermark BELOW divider */}
+        <div className="row">
+          <div className="col-12 text-center position-relative watermark-container">
+            <span className="watermark-below">FIRST CERT</span>
+          </div>
+        </div>
+      </div>
+
+     
+    </footer>
   );
-}
+};
 
 export default DemoFooter;

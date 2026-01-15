@@ -1,0 +1,679 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+import IndexNavbar from "components/Navbars/IndexNavbar";
+import DemoFooter from "components/Footers/DemoFooter";
+import "../../../assets/css/certificates.css";
+import imgcmmi from "../../../assets/img/country/india/hyderabad/cmmi-hyderabad.jpg";
+import benefitscmmi from "../../../assets/img/country/india/hyderabad/cmmi-benefits.jpg";
+import bgimg from "../../../assets/img/services/card-cmmi.webp";
+import EnquiryForm from "views/index-sections/EnquiryForm";
+
+function HyderabadCmmi() {
+  const benefits = [
+    "Improved Process Quality – Standardized workflows ensure consistent, efficient, and error-free operations.",
+    "Higher Customer Satisfaction – Predictable and high-quality outcomes improve trust and long-term relationships.",
+    "Reduced Project Risks – Better planning, monitoring, and risk control lead to fewer failures.",
+    "Cost Efficiency – Reduced rework and optimized resource usage lower overall project costs.",
+    "Strong Market Reputation – Achieving CMMI Levels 2–5 boosts global visibility and credibility.",
+    "Competitive Advantage – CMMI Certification increases chances of winning large contracts — especially from MNCs and government sectors.",
+    "Enhanced Team Productivity – Defined roles, standardized processes, and continuous improvement practices lead to greater team efficiency and alignment.",
+  ];
+
+  const processSteps = [
+    {
+      number: "1",
+      title: "Consultation",
+      description:
+        "We understand your business, challenges, and desired CMMI maturity level.",
+    },
+    {
+      number: "2",
+      title: "Gap Analysis",
+      description:
+        "Our experts assess your existing processes and identify gaps against CMMI model practices.",
+    },
+    {
+      number: "3",
+      title: "Documentation Support",
+      description:
+        "We help create essential process assets, SOPs, templates, guidelines, metrics, and records.",
+    },
+    {
+      number: "4",
+      title: "Implementation & Training",
+      description:
+        "Teams receive training and support to implement standardized processes aligned with CMMI best practices.",
+    },
+
+    {
+      number: "5",
+      title: "Internal Assessments",
+      description:
+        "We conduct internal reviews and mock appraisals to ensure complete readiness.",
+    },
+    {
+      number: "6",
+      title: "SCAMPI Appraisal (A/B/C)",
+      description:
+        "An authorized Lead Appraiser evaluates your organization for official CMMI certification.",
+    },
+    {
+      number: "7",
+      title: "Continuous Support",
+      description:
+        "First Cert provides ongoing support for maintaining maturity levels and ensuring continuous improvement.",
+    },
+  ];
+
+  return (
+    <>
+      <Helmet>
+        <title>
+          CMMI Certification in Hyderabad | Best CMMI Consultants – First Cert
+        </title>
+        <meta
+          name="description"
+          content="Get CMMI Certification in Hyderabad with expert consulting, training, documentation, and appraisal support. Achieve CMMI Levels 2–5 efficiently with First Cert."
+        />
+        <meta
+          name="keywords"
+          content="CMMI Certification in Hyderabad, CMMI consultants in Hyderabad, CMMI Level 2 certification Hyderabad, CMMI Level 3 certification Hyderabad, CMMI Level 5 certification Hyderabad, CMMI appraisal in Hyderabad, CMMI implementation Hyderabad, CMMI certification cost Hyderabad, CMMI consulting company Hyderabad, CMMI SCAMPI appraisal Hyderabad, CMMI training in Hyderabad, CMMI documentation Hyderabad, CMMI process improvement Hyderabad, Capability Maturity Model Integration Hyderabad, CMMI for IT companies Hyderabad, CMMI for startups Hyderabad, best CMMI consultants Hyderabad, affordable CMMI certification Hyderabad, First Cert CMMI consultants."
+        />
+      </Helmet>
+
+      <IndexNavbar />
+
+      <div
+        className="certificate-hero"
+        style={{
+          backgroundImage: `url(${bgimg})`,
+        }}
+      >
+        <div className="certificate-overlay">
+          <h1 class="main-title">CMMI Certification in Hyderabad</h1>
+          <p class="small-desc">
+            Your Path to High-Performance Processes and Global Excellence
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/918073358319?text=Thank you for contacting First Cert"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fab fa-whatsapp"></i>
+      </a>
+
+      <div className="iso-content-section py-4">
+        <div className="container">
+          <div className="row align-items-center g-4">
+            {/* LEFT SIDE — IMAGE + TEXT */}
+            <div className="col-md-6">
+              {/* IMAGE */}
+              <img
+                src={imgcmmi}
+                alt="ISO 9001 Certification"
+                className="img-fluid rounded-2"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+
+              {/* TEXT BELOW IMAGE */}
+              <p
+                className="text-dark mt-3"
+                style={{
+                  color: "#111111",
+                  fontWeight: "400",
+                  fontSize: "0.975rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                Achieve <b>CMMI Certification in Hyderabad</b> with the expert
+                guidance of <b>First Cert</b>, your trusted partner for
+                structured, efficient, and affordable process improvement. We
+                help organizations build strong, standardized workflows that
+                enhance productivity, accelerate growth, and strengthen global
+                competitiveness.
+              </p>
+              <p
+                className="text-dark mt-3"
+                style={{
+                  color: "#111111",
+                  fontWeight: "400",
+                  fontSize: "0.975rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                Whether your objective is <b>CMMI Maturity Level 2, 3, or 5</b>,
+                our end-to-end support — including gap assessment,
+                documentation, process implementation, training, and appraisal
+                preparation — ensures a smooth and result-oriented path to
+                certification.
+              </p>
+              <p
+                className="text-dark mt-3"
+                style={{
+                  color: "#111111",
+                  fontWeight: "400",
+                  fontSize: "0.975rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                CMMI (Capability Maturity Model Integration) is governed by
+                <b> ISACA</b>, and First Cert provides complete consulting
+                assistance to help Hyderabad-based companies meet model
+                requirements and successfully complete their official appraisal.{" "}
+                <br /> Strengthen process maturity, reduce risks, and build
+                high-performing teams with{" "}
+                <b>CMMI Certification in Hyderabad</b> supported by First Cert.
+              </p>
+            </div>
+
+            <EnquiryForm />
+          </div>
+        </div>
+      </div>
+
+      <section className="certificate-details-section">
+        <div className="container">
+          {/* HEADING 1 */}
+          <h2
+            className="details-title text-primary"
+            style={{ fontSize: "1.8rem" }}
+          >
+            What is CMMI Certification in Hyderabad?
+          </h2>
+
+          <p
+            className="details-text"
+            style={{ color: "#000000", fontWeight: "400" }}
+          >
+            <b>CMMI Certification in Hyderabad</b> is a globally recognized
+            process improvement model designed to help organizations enhance
+            efficiency, quality, and operational consistency. It provides
+            structured best practices across:
+          </p>
+          <div class="vapt-grid">
+            <div class="vapt-card">
+              <h5>Software development</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Project and product management</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Service delivery</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Engineering and design</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Organizational performance</h5>
+            </div>
+          </div>
+          <br />
+          <p
+            className="details-text"
+            style={{ color: "#000000", fontWeight: "400", textAlign: "center" }}
+          >
+            Organizations across Hyderabad adopt CMMI to:
+          </p>
+          <div class="vapt-grid">
+            <div class="vapt-card">
+              <h5>Improve process capability and standardization</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Reduce project failures and rework</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Enhance product and service quality</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Strengthen customer satisfaction and trust</h5>
+            </div>
+
+            <div class="vapt-card">
+              <h5>Compete globally with high maturity processes</h5>
+            </div>
+          </div>
+          <br />
+          <p
+            className="details-text"
+            style={{ color: "#000000", fontWeight: "400" }}
+          >
+            By achieving CMMI certification, businesses in Hyderabad demonstrate
+            their commitment to excellence, making it easier to win enterprise
+            clients, secure global contracts, and establish long-term
+            credibility.
+          </p>
+        </div>
+      </section>
+
+      <section className="iso-section py-5">
+        <div className="container">
+          <h2 className="text-center mb-4 section-title">
+            Which Businesses Need CMMI Certification in Hyderabad?
+          </h2>
+
+          <p className="text-center section-sub mb-5">
+            Any organization aiming to improve operational consistency, reduce
+            risks, and deliver high-quality output can benefit from{" "}
+            <b>CMMI Certification Implementation in Hyderabad</b>.
+          </p>
+          <p className="text-center section-sub mb-5">
+            Industries widely adopting CMMI include:
+          </p>
+
+          <div className="row g-4">
+            {/* LEFT SIDE CARDS */}
+            <div className="col-lg-9">
+              <div className="row g-4">
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-code-slash iso-icon"></i>
+                    <h4>IT & Software Development Companies</h4>
+                    <p>
+                      From established names in Hyderabad’s tech landscape to
+                      emerging startups, CMMI helps build predictable, scalable
+                      development practices.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-cloud-check iso-icon"></i>
+                    <h4>Product Engineering & SaaS Companies</h4>
+                    <p>
+                      Organizations building apps, enterprise products, AI
+                      tools, and cloud platforms gain structured, high-quality
+                      development processes.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-hdd-network iso-icon"></i>
+                    <h4>System Integrators & IT Service Providers</h4>
+                    <p>
+                      Companies delivering managed services, implementation, and
+                      support benefit from better control and efficiency.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-headset iso-icon"></i>
+                    <h4>BPO, KPO & Customer Support Centers</h4>
+                    <p>
+                      CMMI streamlines workflows, reduces errors, and improves
+                      service delivery quality.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-diagram-3 iso-icon"></i>
+                    <h4>Engineering, R&D & Design Centers</h4>
+                    <p>
+                      CMMI helps establish strong engineering processes aligned
+                      with global standards.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-gear-wide-connected iso-icon"></i>
+                    <h4>Aerospace, Defense & Manufacturing Units</h4>
+                    <p>
+                      These industries rely heavily on process consistency and
+                      compliance.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="iso-card small-card">
+                    <i className="bi bi-rocket-takeoff iso-icon"></i>
+                    <h4>Growing Startups Seeking Scalability</h4>
+                    <p>
+                      Startups in Hyderabad’s booming ecosystem adopt CMMI to
+                      build strong process foundations for sustainable growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RIGHT SIDE INTERNAL LINKS BOX */}
+            <div className="col-lg-3">
+              <div className="iso-links-box tall-sidebar">
+                <h5>Our Experties</h5>
+                <ul>
+                  <li>
+                    <a href="iso-9001-certification-in-hyderabad">
+                      ISO 9001 Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="iso-27001-certification-in-hyderabad">
+                      ISO 27001 Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="cmmi-certification-in-hyderabad">
+                      CMMI Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="hipaa-certification-in-hyderabad">
+                      HIPAA Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="vapt-certification-in-hyderabad">
+                      VAPT Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gdpr-certification-in-hyderabad">
+                      GDPR Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="soc-1-certification-in-hyderabad">
+                      SOC 1 Certification in Hyderabad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="soc-2-certification-in-hyderabad">
+                      SOC 2 Certification in Hyderabad
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="text-center section-sub mb-5">
+          Implementing CMMI helps Hyderabad-based companies reduce risks,
+          improve predictability, and increase customer confidence — key for
+          long-term success.
+        </p>
+      </section>
+
+      <div className="iso-benefits-section py-5 bg-white">
+        <div className="container">
+          {/* H1 - Full Width */}
+          <div className="row">
+            <div className="col-12">
+              <h1 className="text-primary fw-bold text-center mb-4">
+                Benefits of Getting CMMI Certification in Hyderabad
+              </h1>
+            </div>
+          </div>
+
+          {/* First Paragraph - Full Width */}
+          <div className="row">
+            <div className="col-12">
+              <p
+                className="text-center mb-5"
+                style={{
+                  color: "#000000",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.6",
+                  fontWeight: "400",
+                }}
+              >
+                Achieving CMMI Certification offers several strategic and
+                operational benefits:
+              </p>
+            </div>
+          </div>
+
+          {/* Image and Benefits - Side by Side */}
+          <div className="row align-items-start mb-5">
+            {/* Benefits List - Right Side */}
+            <div className="col-md-6">
+              <div className="benefits-list ps-md-4">
+                {benefits.map((benefit, index) => (
+                  <div
+                    key={index}
+                    className="d-flex align-items-start mb-3 p-2"
+                  >
+                    <div
+                      className="bullet-icon text-primary me-3 flex-shrink-0"
+                      style={{ fontSize: "1.5rem", lineHeight: "1.4" }}
+                    >
+                      •
+                    </div>
+                    <p
+                      className="mb-0 flex-grow-1"
+                      style={{
+                        color: "#000000",
+                        lineHeight: "1.5",
+                        fontWeight: "400",
+                      }}
+                    >
+                      {benefit}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Image - Left Side */}
+            <div className="col-md-6">
+              <img
+                src={benefitscmmi}
+                alt="ISO 27001 Benefits"
+                className="img-fluid rounded-3"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "450px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+          </div>
+          <p
+            className="text-center mb-5"
+            style={{
+              color: "#000000",
+              fontSize: "1.1rem",
+              lineHeight: "1.6",
+              fontWeight: "400",
+            }}
+          >
+            With <a href="/">First Cert</a>, achieving CMMI Certification in
+            Hyderabad becomes a structured, strategic, and value-driven journey.
+          </p>
+        </div>
+      </div>
+
+      <div className="iso-process-section py-5 position-relative overflow-hidden">
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100 bg-light"
+          style={{ marginTop: "-3rem" }}
+        ></div>
+        <div className="container position-relative">
+          <div className="row justify-content-center text-center mb-5">
+            <div className="col-lg-10">
+              <h2 className="display-5 fw-bold mb-3 text-primary">
+                CMMI Certification in Hyderabad – Simplified Process with First
+                Cert
+              </h2>
+              <p
+                className="lead fw-bold mb-0 lh-lg fs-5"
+                style={{ color: "#212529", fontWeight: "500" }}
+              >
+                We follow a proven consulting methodology tailored to your
+                organization’s needs:
+              </p>
+            </div>
+          </div>
+
+          {/* Process Steps */}
+          <div className="row justify-content-center">
+            <div className="col-xl-10">
+              <div className="process-timeline position-relative">
+                {/* Connecting Line */}
+                <div className="process-line position-absolute top-0 start-50 translate-middle-x h-100 d-none d-md-block"></div>
+
+                {processSteps.map((step, index) => (
+                  <div
+                    key={index}
+                    className="process-step position-relative mb-4"
+                  >
+                    <div className="row align-items-center">
+                      {/* Step Number & Icon - Alternating sides */}
+                      <div
+                        className={`col-md-5 ${
+                          index % 2 === 0 ? "" : "order-md-2"
+                        }`}
+                      >
+                        <div className="step-number-container text-center text-md-end">
+                          <div className="step-number d-inline-flex align-items-center justify-content-center position-relative">
+                            <div className="number-circle bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                              {step.number}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Step Content - Alternating sides */}
+                      <div
+                        className={`col-md-7 ${
+                          index % 2 === 0 ? "" : "order-md-1"
+                        }`}
+                      >
+                        <div
+                          className={`step-card p-4 rounded-3 shadow-sm h-100 ${
+                            index % 2 === 0 ? "ms-md-4" : "me-md-4"
+                          }`}
+                        >
+                          <h4 className="text-primary fw-bold mb-3">
+                            {step.title}
+                          </h4>
+                          <p
+                            className="mb-0 lh-lg"
+                            style={{
+                              fontSize: "0.95rem",
+                              color: "#212529",
+                              fontWeight: "500",
+                            }}
+                          >
+                            {step.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="plans-wrapper py-5">
+        {/* Main Heading */}
+        <h2 className="text-center mb-4 main-heading text-primary">
+          How Much Does CMMI Certification Cost in Hyderabad?
+        </h2>
+
+        <div className="container">
+          <div className="row justify-content-center align-items-start">
+            {/* CARD 1 */}
+            <div className="col-md-6 mb-4">
+              <div
+                className="plan-card"
+                style={{ "--accent-color": "#fa0038" }}
+              >
+                <div className="title small-title">
+                  The cost of CMMI Certification in Hyderabad depends on:
+                </div>
+
+                <ul className="features">
+                  <li className="check">Desired maturity level (2, 3, or 5)</li>
+                  <li className="check">Organization size</li>
+                  <li className="check">
+                    Nature of projects and process complexity
+                  </li>
+                  <li className="check">Documentation and training needs</li>
+                  <li className="check">SCAMPI appraisal type (A/B/C)</li>
+                  <li className="check">
+                    Duration of consulting and implementation
+                  </li>
+                </ul>
+
+                <div className="title small-title">
+                  Since each organization is unique, there is no fixed price.
+                  First Cert offers affordable, customized packages designed to
+                  match your budget and goals.
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2 */}
+            <div className="col-md-6 mb-4">
+              <div
+                className="plan-card"
+                style={{ "--accent-color": "#164fa9" }}
+              >
+                <div className="title small-title">
+                  Achieve CMMI Certification in Hyderabad with First Cert – Your
+                  Trusted Partner <br /> We help organizations:
+                </div>
+
+                <ul className="features">
+                  <li className="check">Build strong, efficient processes</li>
+                  <li className="check">
+                    Achieve CMMI Maturity Levels 2, 3, and 5
+                  </li>
+                  <li className="check">
+                    Improve product quality & service consistency
+                  </li>
+                  <li className="check">
+                    Strengthen organizational capability
+                  </li>
+                  <li className="check">Enhance global competitiveness</li>
+                </ul>
+
+                <div className="title small-title">
+                  Our consultants ensure a smooth, cost-effective, and
+                  transparent certification journey. 📧 Email:
+                  info@firstcertification.com
+                </div>
+
+                <div className="title small-title">
+                  Start your CMMI Certification journey today with First Cert —
+                  your partner in achieving world-class process maturity in
+                  Hyderabad.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <DemoFooter />
+    </>
+  );
+}
+
+export default HyderabadCmmi;

@@ -90,7 +90,7 @@ function TermsNConditions() {
          
         }}
       >
-        <a style={{zIndex:"999"}} href="https://api.whatsapp.com/send?phone=918073358319&text=Hi FirstCert! I want to know your Services " target="_blank" rel="noopener noreferrer">
+        <a style={{zIndex:"999"}} href="https://api.whatsapp.com/send?phone=918073358319&text=Thank you for contacting First Cert " target="_blank" rel="noopener noreferrer">
           <i style={{ color:"#25d366"}} className="fab fa-whatsapp" />
         </a>
       </div>

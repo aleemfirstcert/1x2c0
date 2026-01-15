@@ -73,8 +73,8 @@ function SectionCarousel() {
   },[])
   return (
     <>
-      <div className="section pt-o" id="carousel">
-  <Container >
+      <div>
+  {/* <Container >
     <Row>
       <Col>
         <Row className="align-items-center">
@@ -141,7 +141,7 @@ function SectionCarousel() {
         </Row>
       </Col>
     </Row>
-  </Container>
+  </Container> */}
 
       </div>{" "}
     </>

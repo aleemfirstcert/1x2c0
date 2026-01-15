@@ -1,0 +1,571 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+import IndexNavbar from "components/Navbars/IndexNavbar";
+import DemoFooter from "components/Footers/DemoFooter";
+import "../../../assets/css/certificates.css";
+import imgsoc1 from "../../../assets/img/country/middle-east/kuwait/soc1-img.webp";
+import benefitssoc1 from "../../../assets/img/country/middle-east/kuwait/soc1-benefits.webp";
+import bgimg from "../../../assets/img/services/card-soc1.webp";
+import EnquiryForm from "views/index-sections/EnquiryForm";
+
+function KuwaitSoc1() {
+  const benefits = [
+    "Improved Financial Reporting Accuracy",
+    "Increased Client Trust and Transparency",
+    "Reduced Financial and Operational Risks",
+    "Compliance with AICPA Global Standards",
+    "Stronger Market Position and Competitive Advantage",
+    "Enhanced Internal Controls and Governance",
+  ];
+
+  const hipaaData = [
+    {
+      icon: "bi-cash-stack",
+      title: "Payroll Processing Companies",
+    },
+    {
+      icon: "bi-journal-check",
+      title: "Accounting & Financial Service Firms",
+    },
+    {
+      icon: "bi-cloud-check",
+      title: "IT & Cloud Service Providers",
+    },
+    {
+      icon: "bi-hdd-network",
+      title: "Data Processing and Transaction Management Firms",
+    },
+    {
+      icon: "bi-headset",
+      title: "BPOs, KPOs & Outsourcing Organizations",
+    },
+    {
+      icon: "bi-credit-card-2-front",
+      title: "Fintech & Payment Processing Firms",
+    },
+    {
+      icon: "bi-shield-check",
+      title: "Risk & Compliance Service Providers",
+    },
+  ];
+
+  const processSteps = [
+    {
+      number: "1",
+      title: "Initial Consultation",
+      description:
+        "Understanding your business model, financial workflows, and SOC 1 scope.",
+    },
+    {
+      number: "2",
+      title: "Gap Assessment",
+      description: "Review existing controls and identify improvement areas.",
+    },
+    {
+      number: "3",
+      title: "Documentation Support",
+      description:
+        "Develop policies, procedures, risk assessments, SOPs, and control descriptions.",
+    },
+    {
+      number: "4",
+      title: "Implementation of Controls",
+      description:
+        "Deploy controls, monitoring mechanisms, and employee training.",
+    },
+    {
+      number: "5",
+      title: "Internal Audit & Testing",
+      description: "Pre-audit validation of control effectiveness.",
+    },
+    {
+      number: "6",
+      title: "SOC 1 External Audit (Type 1 or Type 2)",
+      description: "Conducted by a licensed CPA firm.",
+    },
+    {
+      number: "7",
+      title: "Continuous Compliance Support",
+      description: "Continuous monitoring, updates, and audit preparation.",
+    },
+  ];
+
+  return (
+    <>
+      <Helmet>
+        <title>
+          SOC 1 Certification in Kuwait | Affordable SOC 1 Consultants – First
+          Cert
+        </title>
+        <meta
+          name="description"
+          content="Looking for SOC 1 Certification in Kuwait? First Cert provides expert SOC 1 consulting, documentation, implementation, and audit readiness support to help organizations achieve secure and compliant financial reporting controls."
+        />
+        <meta
+          name="keywords"
+          content="SOC 1 Certification in Kuwait, SOC 1 consultants in Kuwait, SOC 1 audit Kuwait, SOC 1 Type 1 certification Kuwait, SOC 1 Type 2 certification Kuwait, SOC 1 compliance Kuwait, SOC 1 certification cost in Kuwait, SOC 1 implementation Kuwait, SOC 1 documentation Kuwait, SOC 1 audit support Kuwait, financial reporting controls Kuwait, First Cert SOC 1 consultants, SOC 1 certification for IT companies Kuwait, SOC 1 for service organizations Kuwait, SOC 1 attestation Kuwait, SOC 1 consulting company Kuwait."
+        />
+      </Helmet>
+
+      <IndexNavbar />
+
+      <div
+        className="certificate-hero"
+        style={{
+          backgroundImage: `url(${bgimg})`,
+        }}
+      >
+        <div className="certificate-overlay">
+          <h1 className="main-title">SOC 1 Certification in Kuwait</h1>
+          <p className="small-desc">
+            Strengthen Financial Controls with Confidence
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="https://wa.me/918073358319?text=Thank you for contacting First Cert"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fab fa-whatsapp"></i>
+      </a>
+
+      <div className="iso-content-section py-4">
+        <div className="container">
+          <div className="row align-items-center g-4">
+            {/* LEFT SIDE — IMAGE + TEXT */}
+            <div className="col-md-6">
+              <img
+                src={imgsoc1}
+                alt="soc1 Certification"
+                className="img-fluid rounded-2 mb-3"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
+              />
+
+              <p
+                className="text-dark"
+                style={{
+                  color: "#111111",
+                  fontWeight: "400",
+                  fontSize: "0.975rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                SOC 1 Certification is increasingly essential for service-based
+                organizations in Kuwait that handle or influence client
+                financial data. As businesses depend more on third-party service
+                providers, the need for strong internal financial controls and
+                transparency has become critical. SOC 1 certification ensures
+                your organization maintains effective controls that minimize
+                financial risks, inaccuracies, and compliance gaps.
+              </p>
+
+              <p
+                className="text-dark"
+                style={{
+                  color: "#111111",
+                  fontWeight: "400",
+                  fontSize: "0.975rem",
+                  lineHeight: "1.8",
+                }}
+              >
+                With <b>First Cert</b>, organizations in Kuwait can manage the
+                entire SOC 1 compliance journey efficiently. From risk
+                assessment and documentation to control implementation and audit
+                preparation, we provide a structured, affordable, and
+                results-focused approach to achieving SOC 1 Type 1 or SOC 1 Type
+                2 certification.
+              </p>
+            </div>
+
+            {/* RIGHT SIDE — ENQUIRY FORM */}
+            <div className="col-md-6">
+              <EnquiryForm />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section className="certificate-details-section">
+        <div className="container">
+          {/* HEADING 1 */}
+          <h2
+            className="details-title text-primary"
+            style={{ fontSize: "1.8rem" }}
+          >
+            What is SOC 1 Certification in Kuwait?
+          </h2>
+
+          <p
+            className="details-text"
+            style={{ color: "#000000", fontWeight: "400" }}
+          >
+            <b>SOC 1 Certification in Kuwait</b> is an internationally
+            recognized attestation performed under the{" "}
+            <b>AICPA SSAE 18 standard</b>. It evaluates whether a service
+            organization has appropriate internal controls over financial
+            reporting (ICFR).
+          </p>
+
+          <p
+            className="details-text"
+            style={{ color: "#000000", fontWeight: "400" }}
+          >
+            SOC 1 is particularly relevant for businesses whose processes
+            directly affect the accuracy of financial transactions and
+            statements. The certification focuses on verifying controls related
+            to:
+          </p>
+          <ul className="iso-list">
+            {[
+              "Financial Data processing and management",
+              "Client financial transactions",
+              "Accuracy and integrity of financial reporting",
+              "Operational processes impacting financial data",
+              "Application and system-level controls",
+              "Security and confidentiality of financial information",
+            ].map((item, index) => (
+              <li key={index} className="mb-3">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p
+            className="details-text"
+            style={{ color: "#000000", fontWeight: "400" }}
+          >
+            Organizations across Kuwait — including IT firms, cloud service
+            providers, fintech companies, payroll processors, and outsourcing
+            providers — rely on SOC 1 to demonstrate reliability and build
+            stakeholder confidence. Achieving SOC 1 certification reflects
+            accountability, reduces financial exposure, and assures clients of
+            precise and secure data handling.
+          </p>
+
+          <section className="iso-section py-5">
+            <div className="container">
+              <h2 className="text-center mb-4 section-title">
+                Which Businesses Need SOC 1 Certification in Kuwait?
+              </h2>
+
+              <p className="text-center section-sub mb-5">
+                Any company whose systems or processes impact clients’ financial
+                reporting should consider SOC 1. This includes:
+              </p>
+              <div className="row g-4">
+                {/* LEFT SIDE CARDS */}
+                <div className="col-lg-9">
+                  <div className="row g-4">
+                    {hipaaData.map((item, index) => (
+                      <div className="col-12 col-sm-6 col-md-4" key={index}>
+                        <div className="hipaa-card text-center p-3">
+                          <i className={`bi ${item.icon} hipaa-icon`}></i>
+                          <h5>{item.title}</h5>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* RIGHT SIDE INTERNAL LINKS BOX */}
+                <div className="col-lg-3">
+                  <div className="iso-links-box tall-sidebar">
+                    <h5>Our Experties</h5>
+                    <ul>
+                      <li>
+                        <a href="iso-9001-certification-in-kuwait">
+                          ISO 9001 Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="iso-27001-certification-in-kuwait">
+                          ISO 27001 Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="cmmi-certification-in-kuwait">
+                          CMMI Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="hipaa-certification-in-kuwait">
+                          HIPAA Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="vapt-certification-in-kuwait">
+                          VAPT Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="gdpr-certification-in-kuwait">
+                          GDPR Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="soc-1-certification-in-kuwait">
+                          SOC 1 Certification in Kuwait
+                        </a>
+                      </li>
+                      <li>
+                        <a href="soc-2-certification-in-kuwait">
+                          SOC 2 Certification in Kuwait
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p className="text-center section-sub mb-5">
+              For businesses targeting international clients, particularly in
+              the U.S. and Europe, SOC 1 certification is often a mandatory
+              requirement.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <div className="iso-benefits-section py-5 bg-white">
+        <div className="container">
+          {/* H1 - Full Width */}
+          <div className="row">
+            <div className="col-12">
+              <h1 className="text-primary fw-bold text-center mb-4">
+                Benefits of Getting SOC 1 Certification in Kuwait
+              </h1>
+            </div>
+          </div>
+
+          {/* Image and Benefits - Side by Side */}
+          <div className="row align-items-start mb-5">
+            {/* Image - Left Side */}
+            <div className="col-md-6">
+              <img
+                src={benefitssoc1}
+                alt="soc1 Benefits"
+                className="img-fluid rounded-3"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "450px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+
+            {/* Benefits List - Right Side */}
+            <div className="col-md-6">
+              <div className="benefits-list ps-md-4">
+                {benefits.map((benefit, index) => (
+                  <div
+                    key={index}
+                    className="d-flex align-items-start mb-3 p-2"
+                  >
+                    <div
+                      className="bullet-icon text-primary me-3 flex-shrink-0"
+                      style={{ fontSize: "1.5rem", lineHeight: "1.4" }}
+                    >
+                      •
+                    </div>
+                    <p
+                      className="mb-0 flex-grow-1"
+                      style={{
+                        color: "#000000",
+                        lineHeight: "1.5",
+                        fontWeight: "400",
+                      }}
+                    >
+                      {benefit}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Last Paragraph - Full Width */}
+          <div className="row">
+            <div className="col-12">
+              <p
+                className="text-center"
+                style={{
+                  color: "#000000",
+                  fontSize: "1.1rem",
+                  lineHeight: "1.6",
+                  fontWeight: "400",
+                }}
+              >
+                With <a href="/">First Cert</a>, proven methodology,
+                organizations in Kuwait experience a smooth and outcome-driven
+                SOC 1 certification process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="iso-process-section py-5 position-relative overflow-hidden">
+        <div
+          className="position-absolute top-0 start-0 w-100 h-100 bg-light"
+          style={{ marginTop: "-3rem" }}
+        ></div>
+        <div className="container position-relative">
+          <div className="row justify-content-center text-center mb-5">
+            <div className="col-lg-10">
+              <h2 className="display-5 fw-bold mb-3 text-primary">
+                SOC 1 Certification in Kuwait – Simple & Structured Process with{" "}
+                <span style={{ color: "black" }}>First Cert</span>
+              </h2>
+            </div>
+          </div>
+
+          {/* Process Steps */}
+          <div className="row justify-content-center">
+            <div className="col-xl-10">
+              <div className="process-timeline position-relative">
+                {/* Connecting Line */}
+                <div className="process-line position-absolute top-0 start-50 translate-middle-x h-100 d-none d-md-block"></div>
+
+                {processSteps.map((step, index) => (
+                  <div
+                    key={index}
+                    className="process-step position-relative mb-4"
+                  >
+                    <div className="row align-items-center">
+                      {/* Step Number & Icon - Alternating sides */}
+                      <div
+                        className={`col-md-5 ${
+                          index % 2 === 0 ? "" : "order-md-2"
+                        }`}
+                      >
+                        <div className="step-number-container text-center text-md-end">
+                          <div className="step-number d-inline-flex align-items-center justify-content-center position-relative">
+                            <div className="number-circle bg-primary text-white rounded-circle d-flex align-items-center justify-content-center">
+                              {step.number}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Step Content - Alternating sides */}
+                      <div
+                        className={`col-md-7 ${
+                          index % 2 === 0 ? "" : "order-md-1"
+                        }`}
+                      >
+                        <div
+                          className={`step-card p-4 rounded-3 shadow-sm h-100 ${
+                            index % 2 === 0 ? "ms-md-4" : "me-md-4"
+                          }`}
+                        >
+                          <h4 className="text-primary fw-bold mb-3">
+                            {step.title}
+                          </h4>
+                          <p
+                            className="mb-0 lh-lg"
+                            style={{
+                              fontSize: "0.95rem",
+                              color: "#212529",
+                              fontWeight: "500",
+                            }}
+                          >
+                            {step.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+
+      <div className="plans-wrapper py-5">
+        {/* Main Heading */}
+        <h2 className="text-center mb-4 main-heading text-primary">
+          How Much Does SOC 1 Certification Cost in Kuwait?
+        </h2>
+
+        <div className="container">
+          <div className="row justify-content-center align-items-start">
+            {/* CARD 1 */}
+            <div className="col-md-6 mb-4">
+              <div
+                className="plan-card"
+                style={{ "--accent-color": "#fa0038" }}
+              >
+                <div className="title small-title">
+                  The cost of SOC 1 Certification in Kuwait depends on several
+                  factors, including:
+                </div>
+
+                <ul className="features">
+                  <li className="check">Company size</li>
+                  <li className="check">Number of financial processes</li>
+                  <li className="check">Existing control maturity</li>
+                  <li className="check">IT system complexity</li>
+                  <li className="check">Type of report (Type 1 vs. Type 2)</li>
+                  <li className="check">
+                    Documentation and training requirements
+                  </li>
+                  <li className="check">External audit duration</li>
+                </ul>
+
+                <div className="title small-title">
+                  First Cert provides customized and transparent pricing after
+                  an initial assessment to ensure cost-effective compliance.
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 2 */}
+            <div className="col-md-6 mb-4">
+              <div
+                className="plan-card"
+                style={{ "--accent-color": "#164fa9" }}
+              >
+                <div className="title small-title">
+                  Achieve SOC 1 Certification in Kuwait with First Cert – Your
+                  Trusted Compliance Partner
+                </div>
+                <div className="title small-title">
+                  If you are planning to achieve SOC 1 Certification in Kuwait,
+                  First Cert is your dependable partner for end-to-end
+                  consulting support. We help organizations design and maintain
+                  strong ICFR frameworks aligned with global AICPA standards,
+                  ensuring accuracy, trust, and compliance.
+                </div>
+                <div className="title small-title">
+                  With extensive experience across IT services, SaaS, financial
+                  services, BPOs, and outsourcing industries, First Cert
+                  delivers efficient, affordable, and results-driven SOC 1
+                  consulting services. From assessment and documentation to
+                  audit readiness, we simplify the entire certification journey.
+                </div>
+                <div className="title small-title-p">
+                  📧 Email: info@firstcertification.com Start your SOC 1
+                  Certification journey today with First Cert — ensuring
+                  financial accuracy, operational integrity, and global
+                  compliance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <DemoFooter />
+    </>
+  );
+}
+
+export default KuwaitSoc1;

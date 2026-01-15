@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import cp from "../../assets/img/cp.png"
+// import cp from "../../assets/img/cp.png"
 import logo from "../../assets/img/firstcertlogo.png"
 import {
     Container,
@@ -19,7 +19,7 @@ function CompanyProfile() {
   const [liveDemo, setLiveDemo] = React.useState(false);
   return (
     <div className='section '>
-      <Container >
+      {/* <Container >
           <Row>
             <Col md="6" >
            
@@ -82,7 +82,7 @@ your needs</h6>
 
             </Col>
             </Row>
-            </Container>
+            </Container> */}
     </div>
   )
 }
